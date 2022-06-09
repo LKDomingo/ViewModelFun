@@ -1,0 +1,14 @@
+@model User
+
+<div class="text-center">
+    <h1 class="display-6">Here is a User!</h1>
+    @{
+    if(Model.LastName != null)
+    {
+        <h1 class="display-2">@Model.FirstName @Model.LastName</h1>
+    } else {
+        <h1 class="display-2">@Model.FirstName</h1>
+    }
+    }
+    
+</div>

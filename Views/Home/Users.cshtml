@@ -1,0 +1,19 @@
+@model List<User>;
+
+<div class="">
+    <h1 class="display-6 text-center">Here are some Users!</h1>
+    <div class="border p-3">
+        @{
+            foreach(User user in @Model)
+            {
+                if(user.LastName != null)
+                {
+                <p>@user.FirstName @user.LastName</p>
+                } else {
+                    <p>@user.FirstName</p>
+                }
+            }
+        }
+    </div>
+    
+</div>
